@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
-<body class="bg-dark">
+<body style ="background-color:#ccb63b">
 <img src="radin1.png" class="rounded float-left" width="700" height="700">
 <div class="container" >
     <br> <br>
-    <p ><center><h1 class="text-warning display-1">Hotel Radin Pearl</h1></center></p>
+    <p ><center> <h1 style="font-size: 60px" align="center" >Hotel Radin Pearl</h1></center></p>
     <div class="text-center">
 
         <br> <br>

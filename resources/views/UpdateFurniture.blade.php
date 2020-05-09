@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <img src="/radin1.png" class="rounded float-left" width="300" height="300">
 </head>
-<body class="bg-dark" >
+<body style ="background-color:#ccb63b">
 
 <div class="container" >
 
