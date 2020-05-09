@@ -1,81 +1,53 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <Title>Welcome</Title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-        <title>Laravel</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        .image {
+            /* The image used */
+            background-image: url("images/image.jpg");
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color:#ccb63b;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+            /* Full height */
+            height: 100%;
 
-            .full-height {
-                height: 100vh;
-            }
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+</head>
 
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
+<body >
+<div class="image">
+<div class="Wbill ">
+    <div class="view">
+        <br>          <br>       <br>      <br>      <br>        <br>      <br>          <br>      <br>          <br>      <br>          <br>      <br>       <br>
+        <h1 style="font-size: 100px; color: #330000" align="center" >Hotel Radin Pearl</h1>
 
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+         <br>      <br>      <br>       <br>   <br>      <br>
+    </div>
+</div>
 
-            <div class="content">
+<div class="text-center">
+    <a href="GO" class="btn btn-dark" style="width: 150px; height:40px">GO</a>
+</div>
 
-                <h1 style="font-size: 60px"  >Hotel Radin Pearl</h1>
-                <img src="radin1_logo.png" width=600" height="700" align="left">
-            </div>
-        </div>
-    </body>
+</div>
+</body>
+
 </html>

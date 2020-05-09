@@ -28,6 +28,7 @@
 
         </div>
             <div class="container">
+                <a href="WbillAdd" class="btn btn-primary" >Add Details</a>
 
             <table class="table table-dark table-hover table-bordered">
 
@@ -45,38 +46,28 @@
                     <th scope="col">Action</th>
 
                 </tr>
-                </thead>
+
                 <tbody>
+                </thead>
+           @foreach($Wbill as $row)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark Perera</td>
-                    <td>97/21,Colombo</td>
-                    <td>22/04/2019</td>
-                    <td>22/04/2019</td>
-                    <td>122</td>
-                    <td>1220.00</td>
-                    <td>5200.00</td>
-                    <td>6420.00</td>
+
+                    <td> {{$row-> ID }}</td>
+                    <td> {{$row-> Account_name }}</td>
+                    <td> {{$row-> Service_address }}</td>
+                    <td> {{$row-> Bill_Period }}</td>
+                    <td> {{$row-> Bill_Date }}</td>
+                    <td> {{$row-> Meter_Number }}</td>
+                    <td> {{$row-> Past_Due_Amount }}</td>
+                    <td> {{$row-> Current_Charge }}</td>
+                    <td> {{$row-> Total_Amount }}</td>
                     <td>
-                        <button class="btn btn-primary badge-pill"style="width: 80px"> EDIT </button>
-                        <button class="btn btn-danger badge-pill" style="width: 80px"> DELETE </button>
+                        <a href="click_edit/{{$row->ID}}" class="btn btn-primary badge-pill"style="width: 80px"> EDIT </a>
+
+                        <a href="click_delete/{{$row->ID}}" class="btn btn-danger badge-pill" style="width: 80px"> DELETE </a>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Mark Perera</td>
-                    <td>97/21,Colombo</td>
-                    <td>22/04/2019</td>
-                    <td>22/04/2019</td>
-                    <td>122</td>
-                    <td>1220.00</td>
-                    <td>5200.00</td>
-                    <td>6420.00</td>
-                    <td >
-                        <button class="btn btn-primary badge-pill" style="width: 80px"> EDIT </button>
-                        <button class="btn btn-danger badge-pill" style="width: 80px"> DELETE </button>
-                    </td>
-                </tr>
+                @endforeach
 
                 </tbody>
             </table>

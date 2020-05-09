@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <title>Hotel Furniture</title>
+    <meta name="viewport" content="width device-width= device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark" >
+<img src="radin1.png" class="rounded float-left" width="300" height="300">
+@extends('layouts.my')
+@section('content')
+    <div class="container">
+        <center>
+            <br><br> <br><br> <br><br> <br><br>
+
+            <a href="{{ url('/prnpriview') }}" class="btnprn text-dark bg-success btn-lg ">Print Funiture List</a></center>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.btnprn').printPage();
+            });
+        </script>
+        <center>
+            <table table class="table bg-dark  text-warning table-hover ">
+                <th>id</th>
+                <th>FurnitureID</th>
+                <th>Name</th>
+                <th>Details</th>
+                <th>Quantity</th>
+
+                @foreach($Furniture as $furniture)
+                    <tr>
+                        <td>{{$furniture->id}}</td>
+                        <td>{{$furniture->FurnitureID}}</td>
+                        <td>{{$furniture->Name}}</td>
+                        <td>{{$furniture->Details}}</td>
+                        <td>{{$furniture->Quantity}}</td>
+
+                    </tr>
+
+
+                @endforeach
+
+
+
+            </table>
+        </center>
+    </div>
+@endsection
